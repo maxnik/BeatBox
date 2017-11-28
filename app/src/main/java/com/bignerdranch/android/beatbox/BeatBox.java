@@ -71,4 +71,8 @@ public class BeatBox {
         int soundId = mSoundPool.load(afd, 1);
         sound.setSoundId(soundId);
     }
+
+    public void release() {
+        mSoundPool.release();
+    }
 }
