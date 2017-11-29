@@ -43,6 +43,7 @@ public class BeatBoxFragment extends Fragment {
 
         binding.recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 3));
         binding.recyclerView.setAdapter(new SoundAdapter(mBeatBox.getSounds()));
+        binding.setViewModel(new BeatBoxViewModel(mBeatBox));
 
         return binding.getRoot();
     }
